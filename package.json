@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/nhall97/hello-world/issues"
   },
-  "homepage": "https://github.com/nhall97/hello-world#readme"
+  "homepage": "https://github.com/nhall97/hello-world#readme",
+  "dependencies": {
+    "mocha": "^9.1.2"
+  }
 }
