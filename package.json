@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "cd packages/hello-world & npm start",
     "test": "mocha --recursive --exit packages/hello-world/test"
