@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "publish-helloworld": "node app.js",
+    "test-hello-world": "cd packages/hello-world & npm run test",
     "start-express-helloworld": "cd packages/hello-world & npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
