@@ -5,10 +5,11 @@ var path = require('path');
 const app = express();
 
 // Set port
-const port = process.env.PORT || "1337";
-app.set("port", port);
-//app.listen(port, () => console.log(`Server running on localhost:${port}`));
-app.listen(port, '0.0.0.0');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+app.listen(PORT, '0.0.0.0');
 
 app.use('/', routes);
 
