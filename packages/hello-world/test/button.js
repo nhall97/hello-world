@@ -20,7 +20,6 @@ require('jsdom-global')(); beforeEach(() => {
 
 
   describe('Click Button', () => { 
-    describe('click Button', () => {
       it('Make sure button can be clicked', () => {
         const button = document.querySelector('button')
         const submit = document.querySelector('span')
@@ -40,5 +39,4 @@ require('jsdom-global')(); beforeEach(() => {
 
         //TODO - be able to reload the dom, and assert that the new div exists
       })
-    })
   })
