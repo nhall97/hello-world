@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd packages/hello-world & npm start",
-    "test": "mocha --recursive packages/hello-world/test"
+    "test": "mocha --recursive --exit packages/hello-world/test"
   },
   "repository": {
     "type": "git",
