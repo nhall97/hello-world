@@ -19,8 +19,9 @@ require('jsdom-global')(); beforeEach(() => {
   });
 
 
-  describe('Click Button', () => { 
-      it('Make sure button can be clicked', () => {
+  describe('Click Button', () => {
+
+      it('Button should be clickable', () => {
         const button = document.querySelector('button')
         const submit = document.querySelector('span')
         
@@ -28,7 +29,6 @@ require('jsdom-global')(); beforeEach(() => {
         
         button.addEventListener('click', event => {
           event.preventDefault()
-          console.log('clicked')
           calls++
         })
         
@@ -36,7 +36,10 @@ require('jsdom-global')(); beforeEach(() => {
         submit.dispatchEvent(clickEvent)
         
         console.assert(calls === 1, 'the form was not submitted')
-
-        //TODO - be able to reload the dom, and assert that the new div exists
       })
-  })
+
+      it('Text should be inserted to dom after on click', () => {
+        //TODO - should be able to test the dom.
+      })
+
+  });
