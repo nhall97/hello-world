@@ -7,6 +7,8 @@ const app = express();
 // Set port
 const port = process.env.PORT || "1337";
 app.set("port", port);
+//app.listen(port, () => console.log(`Server running on localhost:${port}`));
+app.listen(port, '0.0.0.0');
 
 app.use('/', routes);
 
@@ -16,4 +18,3 @@ app.get('/', function(req, res) {
   });
 
 // Server
-app.listen(port, () => console.log(`Server running on localhost:${port}`));
