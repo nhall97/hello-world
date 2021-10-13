@@ -6,7 +6,7 @@
   "scripts": {
     "test-hello-world": "cd packages/hello-world & npm run test",
     "start-express-helloworld": "cd packages/hello-world & npm start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd packages/hello-world & npm run test"
   },
   "repository": {
     "type": "git",
