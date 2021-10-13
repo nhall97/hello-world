@@ -105,3 +105,6 @@ dist
 
 # Bad test files
 packages/hello-world/test/unit.js
+
+# Bad package
+packages/hail-mary/*
