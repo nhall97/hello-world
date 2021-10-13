@@ -4,12 +4,13 @@ var path = require('path');
 // App
 const app = express();
 
+//https://help.heroku.com/P1AVPANS/why-is-my-node-js-app-crashing-with-an-r10-error
+
 // Set port
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
-app.listen(PORT, '0.0.0.0');
 
 app.use('/', routes);
 
