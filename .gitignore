@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Bad test files
+packages/hello-world/test/unit.js
