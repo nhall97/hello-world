@@ -12,7 +12,6 @@ describe('GET /', () => {
         .get('/')
         .end((err, res) => {
           res.should.have.status(200);
-          expect(res.body).to.deep.contain("Express + Node");
           done();
         });
     });
