@@ -1,5 +1,6 @@
 const express = require("express");
 const routes = require("./routes");
+
 var path = require('path');
 // App
 const app = express();
@@ -20,3 +21,6 @@ app.get('/', function(req, res) {
   });
 
 // Server
+module.exports = app.listen(PORT, () => {
+  console.log(`Our app is running on port ${ PORT }`);
+});
