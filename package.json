@@ -7,8 +7,7 @@
     "node": "16.6.1"
   },
   "scripts": {
-    "heroku-prebuild": "cd packages/express-basic & npm ci",
-    "start": "cd packages/express-basic & npm start",
+    "start": "node server.js",
     "test": "mocha --recursive --exit packages/hello-world/test"
   },
   "repository": {
