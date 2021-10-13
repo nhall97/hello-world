@@ -12,14 +12,16 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
+/* SET PORT IN APP.JS instead
 var port = process.env.PORT || 3000;
 app.set('port', port);
 app.listen(port, () => console.log(`Server running on localhost:${port}`));
+*/
 
 /**
  * Create HTTP server.
  */
-
+var port = process.env.PORT || 3000;
 var server = http.createServer(app);
 
 /**

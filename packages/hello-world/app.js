@@ -19,6 +19,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var port = process.env.PORT || 3000;
+app.set('port', port);
+app.listen(port, () => console.log(`Server running on localhost:${port}`));
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
