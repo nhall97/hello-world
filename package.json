@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-express-helloworld": "cd packages/hello-world & npm start",
-    "test": "mocha packages/hello-world/test/integration"
+    "start": "cd packages/hello-world & npm start",
+    "test": "mocha --recursive packages/hello-world/test"
   },
   "repository": {
     "type": "git",
@@ -18,21 +18,27 @@
   },
   "homepage": "https://github.com/nhall97/hello-world#readme",
   "dependencies": {
+    "chai": "^4.2.0",
+    "chai-dom": "^1.10.0",
+    "chai-http": "^4.3.0",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "flat-cache": "^2.0.1",
     "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
     "mocha": "^9.1.2",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11",
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "cors": "^2.8.5",
-    "flat-cache": "^2.0.1",
     "nodemon": "^1.19.4",
     "prettier": "^1.18.2",
+    "pug": "2.0.0-beta11",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "sinon": "^7.5.0"
+  },
+  "devDependencies": {
+    "jsdom": "18.0.0",
+    "jsdom-global": "3.0.2"
   }
 }
