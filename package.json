@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-hello-world": "cd packages/hello-world & npm run test",
     "start-express-helloworld": "cd packages/hello-world & npm start",
-    "test": "cd packages/hello-world & npm run test"
+    "test": "mocha packages/hello-world/test/integration"
   },
   "repository": {
     "type": "git",
